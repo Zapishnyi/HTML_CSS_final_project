@@ -9,7 +9,6 @@
         margin-left: 0.55vw;
     }
 
-
     .button_violet {
         font-size: 0.95rem;
     }
@@ -37,7 +36,6 @@
     .hero__text > p {
         font-size: 1rem;
         line-height: 185%;
-
     }
 
     .hero__img img {
@@ -94,7 +92,6 @@
 
     .projects img {
         max-width: none;
-
         width: 87%;
         height: 87%;
     }
