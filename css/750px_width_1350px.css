@@ -1,0 +1,463 @@
+/*------------------------ Fonts declaration ----------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+@font-face {
+    font-family: "Lato 400";
+    src: url("../fonts/Lato-Regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Lato 600";
+    src: url("../fonts/Lato-SemiBold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Lato 700";
+    src: url("../fonts/Lato-Bold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Lato 800";
+    src: url("../fonts/Lato-ExtraBold.woff2") format("woff2");
+}
+
+/*----------------- Fonts declaration end -------------------*/
+/*--------------------General declaration--------------------*/
+
+html, body, h1, h2 {
+    box-sizing: border-box;
+    color: var(--text_gray);
+    font-family: "Lato 400", sans-serif;
+    font-weight: 400;
+    text-wrap: balance;
+    user-select: none;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*main colors can be changed if needed*/
+:root {
+    --background_gradient: radial-gradient(50% 50% at 50% 50%, #353550 0%, rgba(25, 25, 27, 0.00) 100%);
+    --background_violet: #5454D4;
+    --background_dark_violet: #19191B;
+    --text_violet: #5454D4;
+    --text_gray: rgba(255, 255, 255, 0.70);
+    --text_white: #FFF;
+}
+
+.container {
+    display: flex;
+    max-width: 83vw;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo span {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    margin-left: 8px;
+    color: var(--text_white);
+}
+
+.logo img {
+    width: calc((100vw - 375px) * 0.012149533 + 27px);
+}
+
+.button_violet {
+    font-family: "Lato 700", sans-serif;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc((100vw - 375px) * 0.0355 + 166px);
+    min-height: 44px;
+    min-width: 166px;
+    aspect-ratio: 3.70/1;
+    color: var(--text_white);
+    font-size: calc((100vw - 375px) * 0.00374 + 16px);
+    border-radius: 5px;
+    background: var(--background_violet);
+    transition: 0.4s;
+}
+
+.button_violet:hover {
+    box-shadow: 0 5px 50px #8e8ed4;
+    transition: 0.4s;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    background: var(--background_dark_violet);
+}
+
+/*---------------General declaration end--------------------*/
+/*--------------------Header -------------------------------*/
+
+header .container {
+    justify-content: space-between;
+    height: 8.3vw;
+    align-items: center;
+    min-height: 110px;
+}
+
+header nav {
+    display: flex;
+    font-size: 18px;
+}
+
+nav a {
+    color: var(--text_gray);
+    transform: scale(1);
+}
+
+nav a:first-child {
+    font-family: "Lato 600", sans-serif;
+    font-weight: 600;
+    color: var(--text_violet);
+    letter-spacing: -0.5px
+}
+
+nav p {
+    transform: scale(1);
+    transition: 0.3s;
+}
+
+nav p:hover {
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+
+nav a:not(:last-child) {
+    margin-right: 2.8vw;
+}
+
+.button_transparent {
+    aspect-ratio: 3.57/1;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    letter-spacing: -0.5px;
+    color: var(--text_white);
+    width: calc((100vw - 375px) * 0.0355 + 119px);
+    border-radius: 5px;
+    border: 1px solid #FFF;
+    backdrop-filter: blur(1px);
+    overflow: hidden;
+}
+
+.button_transparent:after {
+    content: "";
+    position: absolute;
+    width: 18.5vw;
+    height: 18.5vw;
+    border-radius: 50%;
+    background: var(--background_violet);
+    bottom: -19vw;
+    transition: 1s;
+    z-index: -1;
+}
+
+.button_transparent:hover:after {
+    transition: 1s;
+    bottom: -5vw;
+}
+
+/*--------------------Header end ------------------------------*/
+/*----------------------Hero ----------------------------------*/
+
+.hero .container {
+    background: var(--background_gradient);
+    min-height: 59vw;
+}
+
+.hero__text {
+    display: flex;
+    flex-basis: 50%;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 11%;
+}
+
+.hero__text h1 {
+    font-size: calc((100vw - 375px) * 0.035681 + 42px);
+    max-width: 1460px;
+    line-height: 105%;
+    color: var(--text_white);
+    animation: element_appear 0.8s ease forwards 1;
+}
+
+.hero__text > p {
+    font-size: calc((100vw - 375px) * 0.0046729 + 16px);
+    line-height: 185.714%;
+    letter-spacing: -0.657px;
+    margin: 1.6vw 0 3.4vw 0;
+    max-width: 37vw;
+    animation: element_appear 1.2s ease forwards 1;
+}
+
+.hero__text a {
+    font-family: "Lato 700", sans-serif;
+    font-weight: 700;
+}
+
+.hero__img {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-basis: 50%;
+    animation: element_appear 1.1s cubic-bezier(0.16, 0.66, 0.64, 0.99) forwards 1;
+    margin-bottom: 7%;
+}
+
+.hero__img img {
+    max-width: 526px;
+    min-width: 300px;
+    width: 47vw;
+    margin-right: 14px;
+}
+
+@keyframes element_appear {
+    0% {
+        transform: translateY(3.4vw);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/*------------------------Hero end--------------------------*/
+/*------------------"Why Enver" section---------------------*/
+
+.why_enver .container {
+    flex-direction: column;
+}
+
+.why_enver__text {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.why_enver__text h2 {
+    color: var(--text_white);
+    font-size: calc((100vw - 375px) * 0.02243 + 36px);
+    line-height: 117%;
+    max-width: 700px;
+    margin-right: 3.4vw;
+}
+
+.why_enver__text p {
+    margin-top: 5px;
+    font-size: calc((100vw - 375px) * 0.004672897 + 16px);
+    font-style: normal;
+    line-height: 185%;
+    letter-spacing: -0.657px;
+}
+
+.why_enver__img {
+    margin-top: 3.4vw;
+}
+
+/*-----------------"Why Enver" section end -----------------------*/
+/*---------------------Services section---------------------------*/
+
+.services .container {
+    background: var(--background_gradient);
+    min-height: 765px;
+    margin-top: 10.4vw;
+    margin-bottom: 9.5vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.services h2 {
+    color: var(--text_white);
+    text-align: center;
+    font-size: calc((100vw - 375px) * 0.02243 + 36px);
+    line-height: 117%;
+    max-width: 50vw;
+    text-wrap: pretty;
+    margin-bottom: 2.2vw;
+}
+
+.services .service_list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service_list .service_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 21vw;
+    min-width: 269px;
+    width: calc(23vw + 26px);
+    margin: 0.8vw;
+    text-align: center;
+}
+
+.service_card > p {
+    max-width: 600px;
+}
+
+.img_back_plate {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img_back_plate:has(img[src*=yellow]) {
+    background: rgba(254, 220, 90, 0.10);;
+}
+
+.img_back_plate:has(img[src*=violet]) {
+    background: rgba(84, 84, 212, 0.10);;
+}
+
+.img_back_plate:has(img[src*=red]) {
+    background: rgba(240, 64, 55, 0.10);
+}
+
+.service_card h4 {
+    font-family: "Lato 600", sans-serif;
+    font-weight: 600;
+    color: var(--text_white);
+    font-size: calc((100vw - 375px) * 0.00374 + 24px);
+    letter-spacing: -0.75px;
+    margin: 1.4vw 0 1.7vw 0;
+}
+
+.service_card p {
+    font-size: calc((100vw - 375px) * 0.00374 + 16px);
+    line-height: 140%;
+    letter-spacing: -0.5px;
+}
+
+/*----------------------Services section end-------------------------*/
+/*-----------------------Portfolio section---------------------------*/
+
+.portfolio .container {
+    min-height: 53vw;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.portfolio h3 {
+    font-family: "Lato 800", sans-serif;
+    font-weight: 800;
+    color: var(--text_white);
+    font-size: calc((100vw - 375px) * 0.02056 + 36px);
+}
+
+.portfolio .projects {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.projects div {
+    aspect-ratio: 1.03/0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 384px;
+    width: 27vw;
+    min-width: 375px;
+    border-radius: 14px;
+    background: #1E1E20;
+    transition: 0.4s;
+}
+
+.projects a {
+    margin: 5px 0;
+}
+
+.projects div:hover {
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+
+.projects img {
+    width: 87%;
+    height: 87%;
+}
+
+.portfolio .balance {
+    height: 4.8vw;
+}
+
+/*---------------------Portfolio section end------------------------------*/
+/*-----------------------Contact us section*----------------------------- */
+
+.contacts .container {
+    min-height: 34vw;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3vw;
+}
+
+.contacts h2 {
+    font-weight: 400;
+    color: var(--text_white);
+    font-size: calc((100vw - 375px) * 0.02243 + 36px);
+}
+
+.contacts a {
+    font-family: "Lato 700", sans-serif;
+    font-weight: 700;
+    margin-left: 50px;
+}
+
+/*-----------------------Contact us section end------------------------- */
+/*-----------------------------Footer------------------------------------*/
+
+footer .container {
+    justify-content: space-between;
+    align-items: center;
+    min-height: 13vw;
+}
+
+footer a {
+    font-family: "Lato 700", sans-serif;
+    display: none;
+}
+
+footer .container > * {
+    margin-bottom: 50px;
+}
+
+footer p {
+    font-family: "Lato 700", sans-serif;
+    color: var(--text_gray);
+    font-weight: 700;
+    text-align: right;
+    line-height: 237%;
+    letter-spacing: -0.5px;
+}
+
+/*---------------------------Footer end------------------------------------*/
