@@ -1,4 +1,4 @@
-@media screen and (width > 1350px) {
+@media screen and (width > 1400px) {
     /*-----------------General declaration----------------*/
     html, body, p {
         font-size: calc((100vw - 375px) * 0.00467289719626168 + 16px);
@@ -86,12 +86,12 @@
 
     .projects div {
         aspect-ratio: 1.03/0.8;
-        max-width: 100%;
+        /*max-width: 100%;*/
         width: 26vw;
     }
 
     .projects img {
-        max-width: none;
+        max-width: initial;
         width: 87%;
         height: 87%;
     }
