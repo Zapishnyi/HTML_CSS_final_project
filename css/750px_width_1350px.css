@@ -317,11 +317,11 @@ nav a:not(:last-child) {
 }
 
 .img_back_plate:has(img[src*=yellow]) {
-    background: rgba(254, 220, 90, 0.10);;
+    background: rgba(254, 220, 90, 0.10);
 }
 
 .img_back_plate:has(img[src*=violet]) {
-    background: rgba(84, 84, 212, 0.10);;
+    background: rgba(84, 84, 212, 0.10);
 }
 
 .img_back_plate:has(img[src*=red]) {
@@ -383,8 +383,6 @@ nav a:not(:last-child) {
     margin: 5px 0;
 }
 
-
-
 .projects img {
     width: 87%;
     height: 87%;
@@ -431,7 +429,7 @@ footer a {
 }
 
 footer .container > * {
-    margin-bottom: 50px;
+    margin-bottom: 3.5vw;
 }
 
 footer p {
