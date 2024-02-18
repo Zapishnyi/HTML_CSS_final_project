@@ -51,6 +51,7 @@ a {
     --text_violet: #5454D4;
     --text_gray: rgba(255, 255, 255, 0.70);
     --text_white: #FFF;
+    --button_hover_glow:#8e8ed4;
 }
 
 .container {

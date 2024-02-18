@@ -1,7 +1,7 @@
 @media (hover:hover){
     /*--------------------General declaration--------------------*/
     .button_violet:hover {
-        box-shadow: 0 5px 50px #8e8ed4;
+        box-shadow: 0 5px 50px var(--button_hover_glow);
         transition: 0.4s;
     }
 
