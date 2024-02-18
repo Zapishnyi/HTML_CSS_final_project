@@ -33,6 +33,9 @@ html, body, h1, h2 {
     text-wrap: balance;
     user-select: none;
 }
+body{
+    overflow-x:hidden ;
+}
 
 * {
     margin: 0;
@@ -384,8 +387,8 @@ nav a:not(:last-child) {
 }
 
 .projects img {
-    width: 87%;
-    height: 87%;
+    width: 88%;
+    height: 88%;
 }
 
 .portfolio .balance {
