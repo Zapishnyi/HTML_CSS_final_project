@@ -119,8 +119,7 @@ header nav {
 
 nav a {
     color: var(--text_gray);
-    transform: scale(1);
-}
+   }
 
 nav a:first-child {
     font-family: "Lato 600", sans-serif;
