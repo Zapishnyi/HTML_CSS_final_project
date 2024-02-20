@@ -88,8 +88,6 @@ a {
     justify-content: center;
     align-items: center;
     width: calc((100vw - 375px) * 0.0355 + 166px);
-    min-height: 44px;
-    min-width: 166px;
     aspect-ratio: 3.70/1;
     color: var(--text_white);
     font-size: calc((100vw - 375px) * 0.00374 + 16px);
